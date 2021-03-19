@@ -25,7 +25,7 @@ for ar in articles:
                 "title": title,
                 "source": target_source,
                 "provider": provider,
-                "timestamp": str(datetime.datetime.now()),
+                "timestamp": datetime.datetime.now(),
                 "newsID": news_id
             }
         }
