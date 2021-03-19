@@ -3,4 +3,4 @@
 python3 /naverWork.py
 python3 /daumWork.py
 
-sleep 1800
+sleep 60
