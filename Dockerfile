@@ -18,4 +18,5 @@ COPY run.sh /run.sh
 COPY daumWork.py /daumWork.py
 COPY naverWork.py /naverWork.py
 
-CMD ["/run.sh"]
+RUN ["chmod", "+x" , "/run.sh"]
+CMD ["sh", "/run.sh"]
