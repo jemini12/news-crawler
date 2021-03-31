@@ -5,10 +5,7 @@ import json
 from elasticsearch import Elasticsearch, helpers
 
 es = Elasticsearch(
-    hosts=[{'host': "localhost", 'port': "9200"}],
-    verify_certs=False,
-    http_auth=('admin','admin'),
-    scheme="https"
+    hosts=[{'host': "localhost", 'port': "9200"}]
 )
 
 target_source = "https://m.daum.net/"
