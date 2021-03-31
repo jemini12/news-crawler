@@ -14,7 +14,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from elasticsearch import Elasticsearch, helpers
 
-es = Elasticsearch(hosts="http://localhost:9200/")
+es = Elasticsearch(
+    hosts=[{'host': "localhost", 'port': "9200"}],
+    verify_certs=False,
+    http_auth=('admin','admin'),
+    scheme="https"
+)
 
 target_source = "https://m.naver.com/naverapp/?cmd=onMenu&version=3&menuCode=NEWS"
 portal = "naver"
