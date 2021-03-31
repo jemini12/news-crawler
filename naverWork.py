@@ -14,7 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from elasticsearch import Elasticsearch, helpers
 
-es = Elasticsearch(hosts="http://news-crawler-es-1426481898.ap-northeast-2.elb.amazonaws.com:9200/")
+es = Elasticsearch(hosts="http://localhost:9200/")
 
 target_source = "https://m.naver.com/naverapp/?cmd=onMenu&version=3&menuCode=NEWS"
 portal = "naver"
