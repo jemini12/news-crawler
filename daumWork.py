@@ -33,7 +33,8 @@ for ar in articles:
             }
         }
     )
-    helpers.bulk(es, documents)
+
+helpers.bulk(es, documents)
 
 print(documents)
 

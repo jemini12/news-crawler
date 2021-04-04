@@ -55,7 +55,8 @@ for box in boxes:
             }
         }
     )
-    helpers.bulk(es, documents)
+
+helpers.bulk(es, documents)
 
 print(documents)
 driver.close()
